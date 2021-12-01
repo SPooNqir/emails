@@ -93,6 +93,9 @@
           "additionalProperties": {
             "type": "string"
           }
+        },
+        "title": {
+          "type": "string"
         }
       }
     },
