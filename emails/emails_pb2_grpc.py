@@ -5,7 +5,7 @@ import grpc
 import emails_pb2 as emails__pb2
 
 
-class TemplateStub(object):
+class EmailsStub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -14,58 +14,42 @@ class TemplateStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.Get = channel.unary_unary(
-                '/template.Template/Get',
-                request_serializer=emails__pb2.TemplateData.SerializeToString,
-                response_deserializer=emails__pb2.TemplateData.FromString,
-                )
-        self.Create = channel.unary_unary(
-                '/template.Template/Create',
-                request_serializer=emails__pb2.TemplateData.SerializeToString,
-                response_deserializer=emails__pb2.TemplateData.FromString,
+        self.SendTemplate = channel.unary_unary(
+                '/emails.Emails/SendTemplate',
+                request_serializer=emails__pb2.EmailTemplate.SerializeToString,
+                response_deserializer=emails__pb2.EmailTemplate.FromString,
                 )
 
 
-class TemplateServicer(object):
+class EmailsServicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def Get(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-    def Create(self, request, context):
+    def SendTemplate(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_TemplateServicer_to_server(servicer, server):
+def add_EmailsServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'Get': grpc.unary_unary_rpc_method_handler(
-                    servicer.Get,
-                    request_deserializer=emails__pb2.TemplateData.FromString,
-                    response_serializer=emails__pb2.TemplateData.SerializeToString,
-            ),
-            'Create': grpc.unary_unary_rpc_method_handler(
-                    servicer.Create,
-                    request_deserializer=emails__pb2.TemplateData.FromString,
-                    response_serializer=emails__pb2.TemplateData.SerializeToString,
+            'SendTemplate': grpc.unary_unary_rpc_method_handler(
+                    servicer.SendTemplate,
+                    request_deserializer=emails__pb2.EmailTemplate.FromString,
+                    response_serializer=emails__pb2.EmailTemplate.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'template.Template', rpc_method_handlers)
+            'emails.Emails', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
  # This class is part of an EXPERIMENTAL API.
-class Template(object):
+class Emails(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def Get(request,
+    def SendTemplate(request,
             target,
             options=(),
             channel_credentials=None,
@@ -75,25 +59,8 @@ class Template(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/template.Template/Get',
-            emails__pb2.TemplateData.SerializeToString,
-            emails__pb2.TemplateData.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def Create(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/template.Template/Create',
-            emails__pb2.TemplateData.SerializeToString,
-            emails__pb2.TemplateData.FromString,
+        return grpc.experimental.unary_unary(request, target, '/emails.Emails/SendTemplate',
+            emails__pb2.EmailTemplate.SerializeToString,
+            emails__pb2.EmailTemplate.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

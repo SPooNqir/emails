@@ -1,17 +1,17 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Spoon - Template Golang WS",
+    "title": "Spoon - Emails Golang WS",
     "version": "0.0.1",
     "contact": {
       "name": "Spoon Cloud Team",
-      "url": "https://gitlab.com/SpoonQIR/Cloud/services/template",
+      "url": "https://gitlab.com/SpoonQIR/Cloud/services/emails",
       "email": "sebastien.lavayssiere@spoon.ai"
     }
   },
   "tags": [
     {
-      "name": "Template"
+      "name": "Emails"
     }
   ],
   "schemes": [
@@ -25,79 +25,14 @@
     "application/json"
   ],
   "paths": {
-    "/v1/template_golang": {
-      "get": {
-        "operationId": "Template_Get",
-        "responses": {
-          "200": {
-            "description": "A successful response.",
-            "schema": {
-              "$ref": "#/definitions/templateTemplateData"
-            }
-          },
-          "403": {
-            "description": "Returned when the user does not have permission to access the resource.",
-            "schema": {}
-          },
-          "404": {
-            "description": "Returned when the resource does not exist.",
-            "schema": {
-              "type": "string",
-              "format": "string"
-            }
-          },
-          "418": {
-            "description": "I'm a teapot.",
-            "schema": {
-              "$ref": ".grpc.gateway.examples.internal.proto.examplepb.NumericEnum"
-            }
-          },
-          "default": {
-            "description": "An unexpected error response.",
-            "schema": {
-              "$ref": "#/definitions/rpcStatus"
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "required": false,
-            "type": "string",
-            "format": "uint64"
-          },
-          {
-            "name": "email",
-            "in": "query",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "lastData",
-            "in": "query",
-            "required": false,
-            "type": "string",
-            "format": "date-time"
-          },
-          {
-            "name": "test",
-            "in": "query",
-            "required": false,
-            "type": "boolean"
-          }
-        ],
-        "tags": [
-          "Template"
-        ]
-      },
+    "/v1/emails": {
       "post": {
-        "operationId": "Template_Create",
+        "operationId": "Emails_SendTemplate",
         "responses": {
           "200": {
             "description": "A successful response.",
             "schema": {
-              "$ref": "#/definitions/templateTemplateData"
+              "$ref": "#/definitions/emailsEmailTemplate"
             }
           },
           "403": {
@@ -130,17 +65,37 @@
             "in": "body",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/templateTemplateData"
+              "$ref": "#/definitions/emailsEmailTemplate"
             }
           }
         ],
         "tags": [
-          "Template"
+          "Emails"
         ]
       }
     }
   },
   "definitions": {
+    "emailsEmailTemplate": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "tos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replaces": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "protobufAny": {
       "type": "object",
       "properties": {
@@ -167,25 +122,6 @@
           }
         }
       }
-    },
-    "templateTemplateData": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uint64"
-        },
-        "email": {
-          "type": "string"
-        },
-        "lastData": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "test": {
-          "type": "boolean"
-        }
-      }
     }
   },
   "securityDefinitions": {
@@ -202,6 +138,6 @@
   ],
   "externalDocs": {
     "description": "link for docs",
-    "url": "https://gitlab.com/SpoonQIR/Cloud/services/template"
+    "url": "https://gitlab.com/SpoonQIR/Cloud/services/emails"
   }
 }

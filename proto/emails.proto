@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package template;
+package emails;
 
-option go_package = "github.com/slavayssiere-spoon/template";
+option go_package = "github.com/slavayssiere-spoon/emails";
 
 import "google/api/annotations.proto";
 import "google/protobuf/timestamp.proto";
@@ -10,17 +10,17 @@ import "protoc-gen-openapiv2/options/annotations.proto";
 
 option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
 	info: {
-		title: "Spoon - Template Golang WS";
+		title: "Spoon - Emails Golang WS";
 		version: "0.0.1";
 		contact: {
 			name: "Spoon Cloud Team";
-			url: "https://gitlab.com/SpoonQIR/Cloud/services/template";
+			url: "https://gitlab.com/SpoonQIR/Cloud/services/emails";
 			email: "sebastien.lavayssiere@spoon.ai";
 		};
 	};
 	// Overwriting host entry breaks tests, so this is not done here.
 	external_docs: {
-		url: "https://gitlab.com/SpoonQIR/Cloud/services/template";
+		url: "https://gitlab.com/SpoonQIR/Cloud/services/emails";
 		description: "link for docs";
 	}
 	schemes: HTTPS;
@@ -73,23 +73,16 @@ option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
 	}
 };
 
-message TemplateData {
-	uint64 id = 1;
-	string email = 2;
-	google.protobuf.Timestamp lastData = 3;
-	bool test = 4;
+message EmailTemplate {
+	string uid = 1;
+	repeated string tos = 2;
+	map<string, string> replaces = 3;
 }
 
-service Template {
-	rpc Get (TemplateData) returns (TemplateData) {
+service Emails {
+	rpc SendTemplate (EmailTemplate) returns (EmailTemplate) {
 		option (google.api.http) = {
-			get: "/v1/template_golang"
-		};
-	}
-
-	rpc Create (TemplateData) returns (TemplateData) {
-		option (google.api.http) = {
-			post: "/v1/template_golang"
+			post: "/v1/emails"
 			body: "*"
 		};
 	}
