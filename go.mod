@@ -4,13 +4,13 @@ go 1.17
 
 require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.7.1
-	google.golang.org/genproto v0.0.0-20211207154714-918901c715cf
-	google.golang.org/grpc v1.42.0
+	google.golang.org/genproto v0.0.0-20211208223120-3a66f561d7aa
+	google.golang.org/grpc v1.43.0
 	google.golang.org/protobuf v1.27.1
 )
 
 require (
-	cloud.google.com/go v0.97.0 // indirect
+	cloud.google.com/go v0.99.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
@@ -26,7 +26,7 @@ require (
 	github.com/prometheus/common v0.32.1 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
 	github.com/rs/cors v1.8.0 // indirect
-	github.com/uber/jaeger-client-go v2.29.1+incompatible // indirect
+	github.com/uber/jaeger-client-go v2.30.0+incompatible // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8 // indirect
@@ -42,6 +42,6 @@ require (
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/sirupsen/logrus v1.8.1
 	gitlab.com/SpoonQIR/Cloud/library/golang-common.git v1.0.7
-	golang.org/x/net v0.0.0-20211208012354-db4efeb81f4b // indirect
-	golang.org/x/sys v0.0.0-20211205182925-97ca703d548d // indirect
+	golang.org/x/net v0.0.0-20211215060638-4ddde0e984e9 // indirect
+	golang.org/x/sys v0.0.0-20211214234402-4825e8c3871d // indirect
 )

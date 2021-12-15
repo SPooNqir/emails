@@ -96,9 +96,6 @@
         },
         "from": {
           "type": "string"
-        },
-        "title": {
-          "type": "string"
         }
       }
     },

@@ -77,7 +77,6 @@ message EmailTemplate {
 	repeated string tos = 2;
 	map<string, string> replaces = 3;
 	string from = 4;
-	string title = 5;
 }
 
 service Emails {
