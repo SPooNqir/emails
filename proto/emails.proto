@@ -6,6 +6,7 @@ option go_package = "github.com/slavayssiere-spoon/emails";
 
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
+import "google/protobuf/any.proto";
 
 option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
 	info: {
@@ -75,7 +76,7 @@ option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
 message EmailTemplate {
 	string uid = 1;
 	repeated string tos = 2;
-	map<string, string> replaces = 3;
+	map<string, google.protobuf.Any> replaces = 3;
 	string from = 4;
 }
 
