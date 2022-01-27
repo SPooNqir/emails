@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z$github.com/slavayssiere-spoon/emails\222A\226\004\022\210\001\n\030Spoon - Emails Golang WS\"e\n\020Spoon Cloud Team\0221https://gitlab.com/SpoonQIR/Cloud/services/emails\032\036sebastien.lavayssiere@spoon.ai2\0050.0.1*\002\002\0012\020application/json:\020application/jsonRP\n\003403\022I\nGReturned when the user does not have permission to access the resource.R;\n\003404\0224\n*Returned when the resource does not exist.\022\006\n\004\232\002\001\007RW\n\003418\022P\n\rI\'m a teapot.\022?\n=\032;.grpc.gateway.examples.internal.proto.examplepb.NumericEnumZ#\n!\n\nApiKeyAuth\022\023\010\002\032\rAuthorization \002b\020\n\016\n\nApiKeyAuth\022\000rB\n\rlink for docs\0221https://gitlab.com/SpoonQIR/Cloud/services/emails',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0c\x65mails.proto\x12\x06\x65mails\x1a\x1cgoogle/api/annotations.proto\x1a.protoc-gen-openapiv2/options/annotations.proto\x1a\x19google/protobuf/any.proto\"\xb5\x01\n\rEmailTemplate\x12\x0b\n\x03uid\x18\x01 \x01(\t\x12\x0b\n\x03tos\x18\x02 \x03(\t\x12\x35\n\x08replaces\x18\x03 \x03(\x0b\x32#.emails.EmailTemplate.ReplacesEntry\x12\x0c\n\x04\x66rom\x18\x04 \x01(\t\x1a\x45\n\rReplacesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12#\n\x05value\x18\x02 \x01(\x0b\x32\x14.google.protobuf.Any:\x02\x38\x01\x32]\n\x06\x45mails\x12S\n\x0cSendTemplate\x12\x15.emails.EmailTemplate\x1a\x15.emails.EmailTemplate\"\x15\x82\xd3\xe4\x93\x02\x0f\"\n/v1/emails:\x01*B\xc0\x04Z$github.com/slavayssiere-spoon/emails\x92\x41\x96\x04\x12\x88\x01\n\x18Spoon - Emails Golang WS\"e\n\x10Spoon Cloud Team\x12\x31https://gitlab.com/SpoonQIR/Cloud/services/emails\x1a\x1esebastien.lavayssiere@spoon.ai2\x05\x30.0.1*\x02\x02\x01\x32\x10\x61pplication/json:\x10\x61pplication/jsonRP\n\x03\x34\x30\x33\x12I\nGReturned when the user does not have permission to access the resource.R;\n\x03\x34\x30\x34\x12\x34\n*Returned when the resource does not exist.\x12\x06\n\x04\x9a\x02\x01\x07RW\n\x03\x34\x31\x38\x12P\n\rI\'m a teapot.\x12?\n=\x1a;.grpc.gateway.examples.internal.proto.examplepb.NumericEnumZ#\n!\n\nApiKeyAuth\x12\x13\x08\x02\x1a\rAuthorization \x02\x62\x10\n\x0e\n\nApiKeyAuth\x12\x00rB\n\rlink for docs\x12\x31https://gitlab.com/SpoonQIR/Cloud/services/emailsb\x06proto3'
+  serialized_pb=b'\n\x0c\x65mails.proto\x12\x06\x65mails\x1a\x1cgoogle/api/annotations.proto\x1a.protoc-gen-openapiv2/options/annotations.proto\x1a\x19google/protobuf/any.proto\"\x9f\x01\n\rEmailTemplate\x12\x0b\n\x03uid\x18\x01 \x01(\t\x12\x0b\n\x03tos\x18\x02 \x03(\t\x12\x35\n\x08replaces\x18\x03 \x03(\x0b\x32#.emails.EmailTemplate.ReplacesEntry\x12\x0c\n\x04\x66rom\x18\x04 \x01(\t\x1a/\n\rReplacesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x32]\n\x06\x45mails\x12S\n\x0cSendTemplate\x12\x15.emails.EmailTemplate\x1a\x15.emails.EmailTemplate\"\x15\x82\xd3\xe4\x93\x02\x0f\"\n/v1/emails:\x01*B\xc0\x04Z$github.com/slavayssiere-spoon/emails\x92\x41\x96\x04\x12\x88\x01\n\x18Spoon - Emails Golang WS\"e\n\x10Spoon Cloud Team\x12\x31https://gitlab.com/SpoonQIR/Cloud/services/emails\x1a\x1esebastien.lavayssiere@spoon.ai2\x05\x30.0.1*\x02\x02\x01\x32\x10\x61pplication/json:\x10\x61pplication/jsonRP\n\x03\x34\x30\x33\x12I\nGReturned when the user does not have permission to access the resource.R;\n\x03\x34\x30\x34\x12\x34\n*Returned when the resource does not exist.\x12\x06\n\x04\x9a\x02\x01\x07RW\n\x03\x34\x31\x38\x12P\n\rI\'m a teapot.\x12?\n=\x1a;.grpc.gateway.examples.internal.proto.examplepb.NumericEnumZ#\n!\n\nApiKeyAuth\x12\x13\x08\x02\x1a\rAuthorization \x02\x62\x10\n\x0e\n\nApiKeyAuth\x12\x00rB\n\rlink for docs\x12\x31https://gitlab.com/SpoonQIR/Cloud/services/emailsb\x06proto3'
   ,
   dependencies=[google_dot_api_dot_annotations__pb2.DESCRIPTOR,protoc__gen__openapiv2_dot_options_dot_annotations__pb2.DESCRIPTOR,google_dot_protobuf_dot_any__pb2.DESCRIPTOR,])
 
@@ -46,8 +46,8 @@ _EMAILTEMPLATE_REPLACESENTRY = _descriptor.Descriptor(
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='emails.EmailTemplate.ReplacesEntry.value', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -64,7 +64,7 @@ _EMAILTEMPLATE_REPLACESENTRY = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=242,
-  serialized_end=311,
+  serialized_end=289,
 )
 
 _EMAILTEMPLATE = _descriptor.Descriptor(
@@ -116,10 +116,9 @@ _EMAILTEMPLATE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=130,
-  serialized_end=311,
+  serialized_end=289,
 )
 
-_EMAILTEMPLATE_REPLACESENTRY.fields_by_name['value'].message_type = google_dot_protobuf_dot_any__pb2._ANY
 _EMAILTEMPLATE_REPLACESENTRY.containing_type = _EMAILTEMPLATE
 _EMAILTEMPLATE.fields_by_name['replaces'].message_type = _EMAILTEMPLATE_REPLACESENTRY
 DESCRIPTOR.message_types_by_name['EmailTemplate'] = _EMAILTEMPLATE
@@ -151,8 +150,8 @@ _EMAILS = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=313,
-  serialized_end=406,
+  serialized_start=291,
+  serialized_end=384,
   methods=[
   _descriptor.MethodDescriptor(
     name='SendTemplate',

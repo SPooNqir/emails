@@ -91,7 +91,7 @@
         "replaces": {
           "type": "object",
           "additionalProperties": {
-            "$ref": "#/definitions/protobufAny"
+            "type": "string"
           }
         },
         "from": {
