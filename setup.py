@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     # Needed to silence warnings (and to be a worthwhile package)
     name='Emails',
-    url='https://github.com/slavayssiere-spoon/emails',
+    url='https://github.com/SPooNqir/emails',
     author='Sebastien Lavayssiere',
     author_email='sebastien.lavayssiere@spoon.ai',
     # Needed to actually package something

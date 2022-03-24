@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package emails;
 
-option go_package = "github.com/slavayssiere-spoon/emails";
+option go_package = "github.com/SPooNqir/emails";
 
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";

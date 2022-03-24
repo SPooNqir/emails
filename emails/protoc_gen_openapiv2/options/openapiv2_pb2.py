@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'ZFgithub.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/options',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n,protoc-gen-openapiv2/options/openapiv2.proto\x12)grpc.gateway.protoc_gen_openapiv2.options\x1a\x1cgoogle/protobuf/struct.proto\"\xdd\x06\n\x07Swagger\x12\x0f\n\x07swagger\x18\x01 \x01(\t\x12=\n\x04info\x18\x02 \x01(\x0b\x32/.grpc.gateway.protoc_gen_openapiv2.options.Info\x12\x0c\n\x04host\x18\x03 \x01(\t\x12\x11\n\tbase_path\x18\x04 \x01(\t\x12\x42\n\x07schemes\x18\x05 \x03(\x0e\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Scheme\x12\x10\n\x08\x63onsumes\x18\x06 \x03(\t\x12\x10\n\x08produces\x18\x07 \x03(\t\x12T\n\tresponses\x18\n \x03(\x0b\x32\x41.grpc.gateway.protoc_gen_openapiv2.options.Swagger.ResponsesEntry\x12\\\n\x14security_definitions\x18\x0b \x01(\x0b\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityDefinitions\x12P\n\x08security\x18\x0c \x03(\x0b\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement\x12W\n\rexternal_docs\x18\x0e \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentation\x12V\n\nextensions\x18\x0f \x03(\x0b\x32\x42.grpc.gateway.protoc_gen_openapiv2.options.Swagger.ExtensionsEntry\x1a\x65\n\x0eResponsesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x42\n\x05value\x18\x02 \x01(\x0b\x32\x33.grpc.gateway.protoc_gen_openapiv2.options.Response:\x02\x38\x01\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01J\x04\x08\x08\x10\tJ\x04\x08\t\x10\nJ\x04\x08\r\x10\x0e\"\xe6\x05\n\tOperation\x12\x0c\n\x04tags\x18\x01 \x03(\t\x12\x0f\n\x07summary\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12W\n\rexternal_docs\x18\x04 \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentation\x12\x14\n\x0coperation_id\x18\x05 \x01(\t\x12\x10\n\x08\x63onsumes\x18\x06 \x03(\t\x12\x10\n\x08produces\x18\x07 \x03(\t\x12V\n\tresponses\x18\t \x03(\x0b\x32\x43.grpc.gateway.protoc_gen_openapiv2.options.Operation.ResponsesEntry\x12\x42\n\x07schemes\x18\n \x03(\x0e\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Scheme\x12\x12\n\ndeprecated\x18\x0b \x01(\x08\x12P\n\x08security\x18\x0c \x03(\x0b\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement\x12X\n\nextensions\x18\r \x03(\x0b\x32\x44.grpc.gateway.protoc_gen_openapiv2.options.Operation.ExtensionsEntry\x1a\x65\n\x0eResponsesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x42\n\x05value\x18\x02 \x01(\x0b\x32\x33.grpc.gateway.protoc_gen_openapiv2.options.Response:\x02\x38\x01\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01J\x04\x08\x08\x10\t\"\xab\x01\n\x06Header\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\x0e\n\x06\x66ormat\x18\x03 \x01(\t\x12\x0f\n\x07\x64\x65\x66\x61ult\x18\x06 \x01(\t\x12\x0f\n\x07pattern\x18\r \x01(\tJ\x04\x08\x04\x10\x05J\x04\x08\x05\x10\x06J\x04\x08\x07\x10\x08J\x04\x08\x08\x10\tJ\x04\x08\t\x10\nJ\x04\x08\n\x10\x0bJ\x04\x08\x0b\x10\x0cJ\x04\x08\x0c\x10\rJ\x04\x08\x0e\x10\x0fJ\x04\x08\x0f\x10\x10J\x04\x08\x10\x10\x11J\x04\x08\x11\x10\x12J\x04\x08\x12\x10\x13\"\xc2\x04\n\x08Response\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x41\n\x06schema\x18\x02 \x01(\x0b\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Schema\x12Q\n\x07headers\x18\x03 \x03(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.Response.HeadersEntry\x12S\n\x08\x65xamples\x18\x04 \x03(\x0b\x32\x41.grpc.gateway.protoc_gen_openapiv2.options.Response.ExamplesEntry\x12W\n\nextensions\x18\x05 \x03(\x0b\x32\x43.grpc.gateway.protoc_gen_openapiv2.options.Response.ExtensionsEntry\x1a\x61\n\x0cHeadersEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12@\n\x05value\x18\x02 \x01(\x0b\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Header:\x02\x38\x01\x1a/\n\rExamplesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01\"\xff\x02\n\x04Info\x12\r\n\x05title\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x18\n\x10terms_of_service\x18\x03 \x01(\t\x12\x43\n\x07\x63ontact\x18\x04 \x01(\x0b\x32\x32.grpc.gateway.protoc_gen_openapiv2.options.Contact\x12\x43\n\x07license\x18\x05 \x01(\x0b\x32\x32.grpc.gateway.protoc_gen_openapiv2.options.License\x12\x0f\n\x07version\x18\x06 \x01(\t\x12S\n\nextensions\x18\x07 \x03(\x0b\x32?.grpc.gateway.protoc_gen_openapiv2.options.Info.ExtensionsEntry\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01\"3\n\x07\x43ontact\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\"$\n\x07License\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\"9\n\x15\x45xternalDocumentation\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\"\xee\x01\n\x06Schema\x12J\n\x0bjson_schema\x18\x01 \x01(\x0b\x32\x35.grpc.gateway.protoc_gen_openapiv2.options.JSONSchema\x12\x15\n\rdiscriminator\x18\x02 \x01(\t\x12\x11\n\tread_only\x18\x03 \x01(\x08\x12W\n\rexternal_docs\x18\x05 \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentation\x12\x0f\n\x07\x65xample\x18\x06 \x01(\tJ\x04\x08\x04\x10\x05\"\xe5\x05\n\nJSONSchema\x12\x0b\n\x03ref\x18\x03 \x01(\t\x12\r\n\x05title\x18\x05 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x06 \x01(\t\x12\x0f\n\x07\x64\x65\x66\x61ult\x18\x07 \x01(\t\x12\x11\n\tread_only\x18\x08 \x01(\x08\x12\x0f\n\x07\x65xample\x18\t \x01(\t\x12\x13\n\x0bmultiple_of\x18\n \x01(\x01\x12\x0f\n\x07maximum\x18\x0b \x01(\x01\x12\x19\n\x11\x65xclusive_maximum\x18\x0c \x01(\x08\x12\x0f\n\x07minimum\x18\r \x01(\x01\x12\x19\n\x11\x65xclusive_minimum\x18\x0e \x01(\x08\x12\x12\n\nmax_length\x18\x0f \x01(\x04\x12\x12\n\nmin_length\x18\x10 \x01(\x04\x12\x0f\n\x07pattern\x18\x11 \x01(\t\x12\x11\n\tmax_items\x18\x14 \x01(\x04\x12\x11\n\tmin_items\x18\x15 \x01(\x04\x12\x14\n\x0cunique_items\x18\x16 \x01(\x08\x12\x16\n\x0emax_properties\x18\x18 \x01(\x04\x12\x16\n\x0emin_properties\x18\x19 \x01(\x04\x12\x10\n\x08required\x18\x1a \x03(\t\x12\r\n\x05\x61rray\x18\" \x03(\t\x12Y\n\x04type\x18# \x03(\x0e\x32K.grpc.gateway.protoc_gen_openapiv2.options.JSONSchema.JSONSchemaSimpleTypes\x12\x0e\n\x06\x66ormat\x18$ \x01(\t\x12\x0c\n\x04\x65num\x18. \x03(\t\"w\n\x15JSONSchemaSimpleTypes\x12\x0b\n\x07UNKNOWN\x10\x00\x12\t\n\x05\x41RRAY\x10\x01\x12\x0b\n\x07\x42OOLEAN\x10\x02\x12\x0b\n\x07INTEGER\x10\x03\x12\x08\n\x04NULL\x10\x04\x12\n\n\x06NUMBER\x10\x05\x12\n\n\x06OBJECT\x10\x06\x12\n\n\x06STRING\x10\x07J\x04\x08\x01\x10\x02J\x04\x08\x02\x10\x03J\x04\x08\x04\x10\x05J\x04\x08\x12\x10\x13J\x04\x08\x13\x10\x14J\x04\x08\x17\x10\x18J\x04\x08\x1b\x10\x1cJ\x04\x08\x1c\x10\x1dJ\x04\x08\x1d\x10\x1eJ\x04\x08\x1e\x10\"J\x04\x08%\x10*J\x04\x08*\x10+J\x04\x08+\x10.\"y\n\x03Tag\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12W\n\rexternal_docs\x18\x03 \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentationJ\x04\x08\x01\x10\x02\"\xe1\x01\n\x13SecurityDefinitions\x12^\n\x08security\x18\x01 \x03(\x0b\x32L.grpc.gateway.protoc_gen_openapiv2.options.SecurityDefinitions.SecurityEntry\x1aj\n\rSecurityEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12H\n\x05value\x18\x02 \x01(\x0b\x32\x39.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme:\x02\x38\x01\"\xa0\x06\n\x0eSecurityScheme\x12L\n\x04type\x18\x01 \x01(\x0e\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.Type\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12H\n\x02in\x18\x04 \x01(\x0e\x32<.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.In\x12L\n\x04\x66low\x18\x05 \x01(\x0e\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.Flow\x12\x19\n\x11\x61uthorization_url\x18\x06 \x01(\t\x12\x11\n\ttoken_url\x18\x07 \x01(\t\x12\x41\n\x06scopes\x18\x08 \x01(\x0b\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Scopes\x12]\n\nextensions\x18\t \x03(\x0b\x32I.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.ExtensionsEntry\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01\"K\n\x04Type\x12\x10\n\x0cTYPE_INVALID\x10\x00\x12\x0e\n\nTYPE_BASIC\x10\x01\x12\x10\n\x0cTYPE_API_KEY\x10\x02\x12\x0f\n\x0bTYPE_OAUTH2\x10\x03\"1\n\x02In\x12\x0e\n\nIN_INVALID\x10\x00\x12\x0c\n\x08IN_QUERY\x10\x01\x12\r\n\tIN_HEADER\x10\x02\"j\n\x04\x46low\x12\x10\n\x0c\x46LOW_INVALID\x10\x00\x12\x11\n\rFLOW_IMPLICIT\x10\x01\x12\x11\n\rFLOW_PASSWORD\x10\x02\x12\x14\n\x10\x46LOW_APPLICATION\x10\x03\x12\x14\n\x10\x46LOW_ACCESS_CODE\x10\x04\"\xcd\x02\n\x13SecurityRequirement\x12u\n\x14security_requirement\x18\x01 \x03(\x0b\x32W.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement.SecurityRequirementEntry\x1a)\n\x18SecurityRequirementValue\x12\r\n\x05scope\x18\x01 \x03(\t\x1a\x93\x01\n\x18SecurityRequirementEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x66\n\x05value\x18\x02 \x01(\x0b\x32W.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement.SecurityRequirementValue:\x02\x38\x01\"\x83\x01\n\x06Scopes\x12K\n\x05scope\x18\x01 \x03(\x0b\x32<.grpc.gateway.protoc_gen_openapiv2.options.Scopes.ScopeEntry\x1a,\n\nScopeEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01*;\n\x06Scheme\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x08\n\x04HTTP\x10\x01\x12\t\n\x05HTTPS\x10\x02\x12\x06\n\x02WS\x10\x03\x12\x07\n\x03WSS\x10\x04\x42HZFgithub.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/optionsb\x06proto3'
+  serialized_pb=b'\n,protoc-gen-openapiv2/options/openapiv2.proto\x12)grpc.gateway.protoc_gen_openapiv2.options\x1a\x1cgoogle/protobuf/struct.proto\"\xdd\x06\n\x07Swagger\x12\x0f\n\x07swagger\x18\x01 \x01(\t\x12=\n\x04info\x18\x02 \x01(\x0b\x32/.grpc.gateway.protoc_gen_openapiv2.options.Info\x12\x0c\n\x04host\x18\x03 \x01(\t\x12\x11\n\tbase_path\x18\x04 \x01(\t\x12\x42\n\x07schemes\x18\x05 \x03(\x0e\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Scheme\x12\x10\n\x08\x63onsumes\x18\x06 \x03(\t\x12\x10\n\x08produces\x18\x07 \x03(\t\x12T\n\tresponses\x18\n \x03(\x0b\x32\x41.grpc.gateway.protoc_gen_openapiv2.options.Swagger.ResponsesEntry\x12\\\n\x14security_definitions\x18\x0b \x01(\x0b\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityDefinitions\x12P\n\x08security\x18\x0c \x03(\x0b\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement\x12W\n\rexternal_docs\x18\x0e \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentation\x12V\n\nextensions\x18\x0f \x03(\x0b\x32\x42.grpc.gateway.protoc_gen_openapiv2.options.Swagger.ExtensionsEntry\x1a\x65\n\x0eResponsesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x42\n\x05value\x18\x02 \x01(\x0b\x32\x33.grpc.gateway.protoc_gen_openapiv2.options.Response:\x02\x38\x01\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01J\x04\x08\x08\x10\tJ\x04\x08\t\x10\nJ\x04\x08\r\x10\x0e\"\xe6\x05\n\tOperation\x12\x0c\n\x04tags\x18\x01 \x03(\t\x12\x0f\n\x07summary\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12W\n\rexternal_docs\x18\x04 \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentation\x12\x14\n\x0coperation_id\x18\x05 \x01(\t\x12\x10\n\x08\x63onsumes\x18\x06 \x03(\t\x12\x10\n\x08produces\x18\x07 \x03(\t\x12V\n\tresponses\x18\t \x03(\x0b\x32\x43.grpc.gateway.protoc_gen_openapiv2.options.Operation.ResponsesEntry\x12\x42\n\x07schemes\x18\n \x03(\x0e\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Scheme\x12\x12\n\ndeprecated\x18\x0b \x01(\x08\x12P\n\x08security\x18\x0c \x03(\x0b\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement\x12X\n\nextensions\x18\r \x03(\x0b\x32\x44.grpc.gateway.protoc_gen_openapiv2.options.Operation.ExtensionsEntry\x1a\x65\n\x0eResponsesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x42\n\x05value\x18\x02 \x01(\x0b\x32\x33.grpc.gateway.protoc_gen_openapiv2.options.Response:\x02\x38\x01\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01J\x04\x08\x08\x10\t\"\xab\x01\n\x06Header\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\t\x12\x0e\n\x06\x66ormat\x18\x03 \x01(\t\x12\x0f\n\x07\x64\x65\x66\x61ult\x18\x06 \x01(\t\x12\x0f\n\x07pattern\x18\r \x01(\tJ\x04\x08\x04\x10\x05J\x04\x08\x05\x10\x06J\x04\x08\x07\x10\x08J\x04\x08\x08\x10\tJ\x04\x08\t\x10\nJ\x04\x08\n\x10\x0bJ\x04\x08\x0b\x10\x0cJ\x04\x08\x0c\x10\rJ\x04\x08\x0e\x10\x0fJ\x04\x08\x0f\x10\x10J\x04\x08\x10\x10\x11J\x04\x08\x11\x10\x12J\x04\x08\x12\x10\x13\"\xc2\x04\n\x08Response\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x41\n\x06schema\x18\x02 \x01(\x0b\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Schema\x12Q\n\x07headers\x18\x03 \x03(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.Response.HeadersEntry\x12S\n\x08\x65xamples\x18\x04 \x03(\x0b\x32\x41.grpc.gateway.protoc_gen_openapiv2.options.Response.ExamplesEntry\x12W\n\nextensions\x18\x05 \x03(\x0b\x32\x43.grpc.gateway.protoc_gen_openapiv2.options.Response.ExtensionsEntry\x1a\x61\n\x0cHeadersEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12@\n\x05value\x18\x02 \x01(\x0b\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Header:\x02\x38\x01\x1a/\n\rExamplesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01\"\xff\x02\n\x04Info\x12\r\n\x05title\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x18\n\x10terms_of_service\x18\x03 \x01(\t\x12\x43\n\x07\x63ontact\x18\x04 \x01(\x0b\x32\x32.grpc.gateway.protoc_gen_openapiv2.options.Contact\x12\x43\n\x07license\x18\x05 \x01(\x0b\x32\x32.grpc.gateway.protoc_gen_openapiv2.options.License\x12\x0f\n\x07version\x18\x06 \x01(\t\x12S\n\nextensions\x18\x07 \x03(\x0b\x32?.grpc.gateway.protoc_gen_openapiv2.options.Info.ExtensionsEntry\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01\"3\n\x07\x43ontact\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\"$\n\x07License\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\"9\n\x15\x45xternalDocumentation\x12\x13\n\x0b\x64\x65scription\x18\x01 \x01(\t\x12\x0b\n\x03url\x18\x02 \x01(\t\"\xee\x01\n\x06Schema\x12J\n\x0bjson_schema\x18\x01 \x01(\x0b\x32\x35.grpc.gateway.protoc_gen_openapiv2.options.JSONSchema\x12\x15\n\rdiscriminator\x18\x02 \x01(\t\x12\x11\n\tread_only\x18\x03 \x01(\x08\x12W\n\rexternal_docs\x18\x05 \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentation\x12\x0f\n\x07\x65xample\x18\x06 \x01(\tJ\x04\x08\x04\x10\x05\"\xfc\x06\n\nJSONSchema\x12\x0b\n\x03ref\x18\x03 \x01(\t\x12\r\n\x05title\x18\x05 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x06 \x01(\t\x12\x0f\n\x07\x64\x65\x66\x61ult\x18\x07 \x01(\t\x12\x11\n\tread_only\x18\x08 \x01(\x08\x12\x0f\n\x07\x65xample\x18\t \x01(\t\x12\x13\n\x0bmultiple_of\x18\n \x01(\x01\x12\x0f\n\x07maximum\x18\x0b \x01(\x01\x12\x19\n\x11\x65xclusive_maximum\x18\x0c \x01(\x08\x12\x0f\n\x07minimum\x18\r \x01(\x01\x12\x19\n\x11\x65xclusive_minimum\x18\x0e \x01(\x08\x12\x12\n\nmax_length\x18\x0f \x01(\x04\x12\x12\n\nmin_length\x18\x10 \x01(\x04\x12\x0f\n\x07pattern\x18\x11 \x01(\t\x12\x11\n\tmax_items\x18\x14 \x01(\x04\x12\x11\n\tmin_items\x18\x15 \x01(\x04\x12\x14\n\x0cunique_items\x18\x16 \x01(\x08\x12\x16\n\x0emax_properties\x18\x18 \x01(\x04\x12\x16\n\x0emin_properties\x18\x19 \x01(\x04\x12\x10\n\x08required\x18\x1a \x03(\t\x12\r\n\x05\x61rray\x18\" \x03(\t\x12Y\n\x04type\x18# \x03(\x0e\x32K.grpc.gateway.protoc_gen_openapiv2.options.JSONSchema.JSONSchemaSimpleTypes\x12\x0e\n\x06\x66ormat\x18$ \x01(\t\x12\x0c\n\x04\x65num\x18. \x03(\t\x12\x66\n\x13\x66ield_configuration\x18\xe9\x07 \x01(\x0b\x32H.grpc.gateway.protoc_gen_openapiv2.options.JSONSchema.FieldConfiguration\x1a-\n\x12\x46ieldConfiguration\x12\x17\n\x0fpath_param_name\x18/ \x01(\t\"w\n\x15JSONSchemaSimpleTypes\x12\x0b\n\x07UNKNOWN\x10\x00\x12\t\n\x05\x41RRAY\x10\x01\x12\x0b\n\x07\x42OOLEAN\x10\x02\x12\x0b\n\x07INTEGER\x10\x03\x12\x08\n\x04NULL\x10\x04\x12\n\n\x06NUMBER\x10\x05\x12\n\n\x06OBJECT\x10\x06\x12\n\n\x06STRING\x10\x07J\x04\x08\x01\x10\x02J\x04\x08\x02\x10\x03J\x04\x08\x04\x10\x05J\x04\x08\x12\x10\x13J\x04\x08\x13\x10\x14J\x04\x08\x17\x10\x18J\x04\x08\x1b\x10\x1cJ\x04\x08\x1c\x10\x1dJ\x04\x08\x1d\x10\x1eJ\x04\x08\x1e\x10\"J\x04\x08%\x10*J\x04\x08*\x10+J\x04\x08+\x10.\"y\n\x03Tag\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12W\n\rexternal_docs\x18\x03 \x01(\x0b\x32@.grpc.gateway.protoc_gen_openapiv2.options.ExternalDocumentationJ\x04\x08\x01\x10\x02\"\xe1\x01\n\x13SecurityDefinitions\x12^\n\x08security\x18\x01 \x03(\x0b\x32L.grpc.gateway.protoc_gen_openapiv2.options.SecurityDefinitions.SecurityEntry\x1aj\n\rSecurityEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12H\n\x05value\x18\x02 \x01(\x0b\x32\x39.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme:\x02\x38\x01\"\xa0\x06\n\x0eSecurityScheme\x12L\n\x04type\x18\x01 \x01(\x0e\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.Type\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12H\n\x02in\x18\x04 \x01(\x0e\x32<.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.In\x12L\n\x04\x66low\x18\x05 \x01(\x0e\x32>.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.Flow\x12\x19\n\x11\x61uthorization_url\x18\x06 \x01(\t\x12\x11\n\ttoken_url\x18\x07 \x01(\t\x12\x41\n\x06scopes\x18\x08 \x01(\x0b\x32\x31.grpc.gateway.protoc_gen_openapiv2.options.Scopes\x12]\n\nextensions\x18\t \x03(\x0b\x32I.grpc.gateway.protoc_gen_openapiv2.options.SecurityScheme.ExtensionsEntry\x1aI\n\x0f\x45xtensionsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12%\n\x05value\x18\x02 \x01(\x0b\x32\x16.google.protobuf.Value:\x02\x38\x01\"K\n\x04Type\x12\x10\n\x0cTYPE_INVALID\x10\x00\x12\x0e\n\nTYPE_BASIC\x10\x01\x12\x10\n\x0cTYPE_API_KEY\x10\x02\x12\x0f\n\x0bTYPE_OAUTH2\x10\x03\"1\n\x02In\x12\x0e\n\nIN_INVALID\x10\x00\x12\x0c\n\x08IN_QUERY\x10\x01\x12\r\n\tIN_HEADER\x10\x02\"j\n\x04\x46low\x12\x10\n\x0c\x46LOW_INVALID\x10\x00\x12\x11\n\rFLOW_IMPLICIT\x10\x01\x12\x11\n\rFLOW_PASSWORD\x10\x02\x12\x14\n\x10\x46LOW_APPLICATION\x10\x03\x12\x14\n\x10\x46LOW_ACCESS_CODE\x10\x04\"\xcd\x02\n\x13SecurityRequirement\x12u\n\x14security_requirement\x18\x01 \x03(\x0b\x32W.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement.SecurityRequirementEntry\x1a)\n\x18SecurityRequirementValue\x12\r\n\x05scope\x18\x01 \x03(\t\x1a\x93\x01\n\x18SecurityRequirementEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x66\n\x05value\x18\x02 \x01(\x0b\x32W.grpc.gateway.protoc_gen_openapiv2.options.SecurityRequirement.SecurityRequirementValue:\x02\x38\x01\"\x83\x01\n\x06Scopes\x12K\n\x05scope\x18\x01 \x03(\x0b\x32<.grpc.gateway.protoc_gen_openapiv2.options.Scopes.ScopeEntry\x1a,\n\nScopeEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01*;\n\x06Scheme\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x08\n\x04HTTP\x10\x01\x12\t\n\x05HTTPS\x10\x02\x12\x06\n\x02WS\x10\x03\x12\x07\n\x03WSS\x10\x04\x42HZFgithub.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/optionsb\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,])
 
@@ -60,8 +60,8 @@ _SCHEME = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5630,
-  serialized_end=5689,
+  serialized_start=5781,
+  serialized_end=5840,
 )
 _sym_db.RegisterEnumDescriptor(_SCHEME)
 
@@ -123,8 +123,8 @@ _JSONSCHEMA_JSONSCHEMASIMPLETYPES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3807,
-  serialized_end=3926,
+  serialized_start=3958,
+  serialized_end=4077,
 )
 _sym_db.RegisterEnumDescriptor(_JSONSCHEMA_JSONSCHEMASIMPLETYPES)
 
@@ -158,8 +158,8 @@ _SECURITYSCHEME_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4924,
-  serialized_end=4999,
+  serialized_start=5075,
+  serialized_end=5150,
 )
 _sym_db.RegisterEnumDescriptor(_SECURITYSCHEME_TYPE)
 
@@ -188,8 +188,8 @@ _SECURITYSCHEME_IN = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5001,
-  serialized_end=5050,
+  serialized_start=5152,
+  serialized_end=5201,
 )
 _sym_db.RegisterEnumDescriptor(_SECURITYSCHEME_IN)
 
@@ -228,8 +228,8 @@ _SECURITYSCHEME_FLOW = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5052,
-  serialized_end=5158,
+  serialized_start=5203,
+  serialized_end=5309,
 )
 _sym_db.RegisterEnumDescriptor(_SECURITYSCHEME_FLOW)
 
@@ -1134,6 +1134,37 @@ _SCHEMA = _descriptor.Descriptor(
 )
 
 
+_JSONSCHEMA_FIELDCONFIGURATION = _descriptor.Descriptor(
+  name='FieldConfiguration',
+  full_name='grpc.gateway.protoc_gen_openapiv2.options.JSONSchema.FieldConfiguration',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='path_param_name', full_name='grpc.gateway.protoc_gen_openapiv2.options.JSONSchema.FieldConfiguration.path_param_name', index=0,
+      number=47, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3911,
+  serialized_end=3956,
+)
+
 _JSONSCHEMA = _descriptor.Descriptor(
   name='JSONSchema',
   full_name='grpc.gateway.protoc_gen_openapiv2.options.JSONSchema',
@@ -1310,10 +1341,17 @@ _JSONSCHEMA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='field_configuration', full_name='grpc.gateway.protoc_gen_openapiv2.options.JSONSchema.field_configuration', index=24,
+      number=1001, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
-  nested_types=[],
+  nested_types=[_JSONSCHEMA_FIELDCONFIGURATION, ],
   enum_types=[
     _JSONSCHEMA_JSONSCHEMASIMPLETYPES,
   ],
@@ -1324,7 +1362,7 @@ _JSONSCHEMA = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=3263,
-  serialized_end=4004,
+  serialized_end=4155,
 )
 
 
@@ -1362,8 +1400,8 @@ _TAG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4006,
-  serialized_end=4127,
+  serialized_start=4157,
+  serialized_end=4278,
 )
 
 
@@ -1401,8 +1439,8 @@ _SECURITYDEFINITIONS_SECURITYENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4249,
-  serialized_end=4355,
+  serialized_start=4400,
+  serialized_end=4506,
 )
 
 _SECURITYDEFINITIONS = _descriptor.Descriptor(
@@ -1432,8 +1470,8 @@ _SECURITYDEFINITIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4130,
-  serialized_end=4355,
+  serialized_start=4281,
+  serialized_end=4506,
 )
 
 
@@ -1561,8 +1599,8 @@ _SECURITYSCHEME = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4358,
-  serialized_end=5158,
+  serialized_start=4509,
+  serialized_end=5309,
 )
 
 
@@ -1593,8 +1631,8 @@ _SECURITYREQUIREMENT_SECURITYREQUIREMENTVALUE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5303,
-  serialized_end=5344,
+  serialized_start=5454,
+  serialized_end=5495,
 )
 
 _SECURITYREQUIREMENT_SECURITYREQUIREMENTENTRY = _descriptor.Descriptor(
@@ -1631,8 +1669,8 @@ _SECURITYREQUIREMENT_SECURITYREQUIREMENTENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5347,
-  serialized_end=5494,
+  serialized_start=5498,
+  serialized_end=5645,
 )
 
 _SECURITYREQUIREMENT = _descriptor.Descriptor(
@@ -1662,8 +1700,8 @@ _SECURITYREQUIREMENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5161,
-  serialized_end=5494,
+  serialized_start=5312,
+  serialized_end=5645,
 )
 
 
@@ -1701,8 +1739,8 @@ _SCOPES_SCOPEENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5584,
-  serialized_end=5628,
+  serialized_start=5735,
+  serialized_end=5779,
 )
 
 _SCOPES = _descriptor.Descriptor(
@@ -1732,8 +1770,8 @@ _SCOPES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5497,
-  serialized_end=5628,
+  serialized_start=5648,
+  serialized_end=5779,
 )
 
 _SWAGGER_RESPONSESENTRY.fields_by_name['value'].message_type = _RESPONSE
@@ -1772,7 +1810,9 @@ _INFO.fields_by_name['license'].message_type = _LICENSE
 _INFO.fields_by_name['extensions'].message_type = _INFO_EXTENSIONSENTRY
 _SCHEMA.fields_by_name['json_schema'].message_type = _JSONSCHEMA
 _SCHEMA.fields_by_name['external_docs'].message_type = _EXTERNALDOCUMENTATION
+_JSONSCHEMA_FIELDCONFIGURATION.containing_type = _JSONSCHEMA
 _JSONSCHEMA.fields_by_name['type'].enum_type = _JSONSCHEMA_JSONSCHEMASIMPLETYPES
+_JSONSCHEMA.fields_by_name['field_configuration'].message_type = _JSONSCHEMA_FIELDCONFIGURATION
 _JSONSCHEMA_JSONSCHEMASIMPLETYPES.containing_type = _JSONSCHEMA
 _TAG.fields_by_name['external_docs'].message_type = _EXTERNALDOCUMENTATION
 _SECURITYDEFINITIONS_SECURITYENTRY.fields_by_name['value'].message_type = _SECURITYSCHEME
@@ -1940,11 +1980,19 @@ Schema = _reflection.GeneratedProtocolMessageType('Schema', (_message.Message,),
 _sym_db.RegisterMessage(Schema)
 
 JSONSchema = _reflection.GeneratedProtocolMessageType('JSONSchema', (_message.Message,), {
+
+  'FieldConfiguration' : _reflection.GeneratedProtocolMessageType('FieldConfiguration', (_message.Message,), {
+    'DESCRIPTOR' : _JSONSCHEMA_FIELDCONFIGURATION,
+    '__module__' : 'protoc_gen_openapiv2.options.openapiv2_pb2'
+    # @@protoc_insertion_point(class_scope:grpc.gateway.protoc_gen_openapiv2.options.JSONSchema.FieldConfiguration)
+    })
+  ,
   'DESCRIPTOR' : _JSONSCHEMA,
   '__module__' : 'protoc_gen_openapiv2.options.openapiv2_pb2'
   # @@protoc_insertion_point(class_scope:grpc.gateway.protoc_gen_openapiv2.options.JSONSchema)
   })
 _sym_db.RegisterMessage(JSONSchema)
+_sym_db.RegisterMessage(JSONSchema.FieldConfiguration)
 
 Tag = _reflection.GeneratedProtocolMessageType('Tag', (_message.Message,), {
   'DESCRIPTOR' : _TAG,
